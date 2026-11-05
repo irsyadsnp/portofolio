@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Portofolio Clarissa Tartila Arrafi, lulusan D3 Kebidanan Poltekkes Kemenkes Jakarta I, STR dan Kompetensi Bidan Vokasi Level 5.">
+<meta name="theme-color" content="#E7E3DA">
+<title>Clarissa Tartila Arrafi — Portofolio Bidan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#E7E3DA;--bg2:#DCD7CB;--ink:#1A1917;--ink2:#4A4741;--mut:#6E6A61;--ox:#9B3418;--line:rgba(26,25,23,.16);--serif:'Instrument Serif',Georgia,serif;--mono:'Azeret Mono',ui-monospace,Menlo,monospace;box-sizing:border-box;padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--bg:#181714;--bg2:#211F1B;--ink:#E7E3DA;--ink2:#C9C4B8;--mut:#9A9588;--ox:#D4694A;--line:rgba(231,227,218,.16)}}
+*,*::before,*::after{box-sizing:inherit;border-radius:0}
+html{scroll-behavior:smooth;scroll-padding-top:60px}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 12.5px/1.75 var(--mono);overflow-x:hidden}
+em{font-style:italic;color:var(--ox)}
+h1,h2,h3,p{margin:0}
+h1,h2,.serif{font-family:var(--serif);font-weight:400;letter-spacing:-.015em}
+.lab{font:500 10.5px/1.4 var(--mono);letter-spacing:.16em;text-transform:uppercase}
+.ox{color:var(--ox)}.mut{color:var(--mut)}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--ox);outline-offset:3px}
+.btn{display:inline-block;font:600 11px/1 var(--mono);letter-spacing:.15em;text-transform:uppercase;text-decoration:none;padding:14px 20px;border:1px solid var(--ink);color:var(--ink);background:transparent}
+.btn.p{background:var(--ink);color:var(--bg)}
+.btn:hover{border-color:var(--ox);color:var(--ox);background:transparent}
+.btn.p:hover{background:var(--ox);border-color:var(--ox);color:var(--bg)}
+.wrap{padding:clamp(72px,10vw,140px) clamp(20px,4vw,56px)}
+/* 1 nav */
+nav{position:fixed;inset:0 0 auto;z-index:50;height:calc(60px + env(safe-area-inset-top,0px));padding:env(safe-area-inset-top,0px) clamp(20px,4vw,56px) 0;display:flex;align-items:center;justify-content:space-between;gap:24px;background:color-mix(in srgb,var(--bg) 78%,transparent);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.brand{font:400 19px var(--serif);text-decoration:none;letter-spacing:-.015em}
+.brand i{color:var(--ox);font-style:normal}
+nav ul{display:flex;gap:28px;list-style:none;margin:0 0 0 auto;padding:0}
+nav ul a{font:500 10.5px/1 var(--mono);letter-spacing:.16em;text-transform:uppercase;text-decoration:none;padding:6px 0;border-bottom:1px solid transparent}
+nav ul a:hover{border-color:var(--ox)}
+nav .btn{padding:10px 14px;font-size:10.5px}
+/* 2 hero */
+.hero{position:relative;isolation:isolate;overflow:hidden;background:var(--bg2);margin-top:calc(60px + env(safe-area-inset-top,0px));height:calc(100vh - 60px);min-height:560px;--p:0}
+.copy{position:absolute;z-index:5;left:clamp(20px,4vw,56px);top:clamp(24px,6vh,64px);max-width:44vw}
+.copy h1{font-size:clamp(30px,4vw,56px);line-height:1.04;margin:16px 0 18px}
+.copy p.l{color:var(--ink2);max-width:42ch;margin-bottom:24px}
+.copy .b{display:flex;gap:10px;flex-wrap:wrap}
+.cap{position:absolute;z-index:5;left:clamp(20px,4vw,56px);bottom:20px;color:var(--mut)}
+.wm{position:absolute;right:3vw;margin:0;font:400 clamp(48px,11vw,170px)/.82 var(--serif);letter-spacing:-.015em;text-align:right;white-space:nowrap;opacity:0;transition:opacity .9s ease;will-change:transform}
+.wm.a{z-index:3;top:44%;transform:translate(calc(var(--mx,0)*-10px),calc(var(--p)*-20vh))}
+.wm.b{z-index:1;top:calc(44% + .8em);transform:translate(calc(var(--mx,0)*-10px),calc(var(--p)*20vh))}
+.wm.b em{color:var(--ox)}
+.subj{position:absolute;z-index:2;right:12vw;bottom:0;height:min(60vh,640px);width:auto;max-width:34vw;opacity:0;clip-path:inset(100% 0 0 0);transition:opacity .9s ease,clip-path 1.4s cubic-bezier(.2,.7,.1,1);transform-origin:50% 100%;transform:translate(calc(var(--mx,0)*16px),calc(var(--p)*-24vh + var(--my,0)*6px)) scale(calc(1 + var(--p)*.06));filter:drop-shadow(0 18px 22px rgba(26,25,23,.3))}
+.on{opacity:1}.subj.on{clip-path:inset(-20% -20% -5% -20%)}
+/* 3 drawing */
+.two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(32px,6vw,96px);align-items:start}
+.two h2,.close h2{font-size:clamp(34px,4.6vw,68px);line-height:1.02;margin:14px 0 20px}
+.two p.l{color:var(--ink2);max-width:48ch}
+.dl{margin:36px 0 0;border-top:1px solid var(--line)}
+.row{display:grid;grid-template-columns:minmax(90px,.7fr) 2fr 110px;gap:16px;align-items:baseline;padding:14px 0;border-bottom:1px solid var(--line)}
+.row .lab{color:var(--ox)}.row b{font-weight:500;text-align:right;white-space:nowrap;font-size:11.5px;letter-spacing:.06em}
+/* 4 study */
+/* 5 practice */
+.prac{border-top:1px solid var(--line)}
+.row.c{grid-template-columns:minmax(80px,.8fr) 2fr minmax(90px,.9fr)}
+.row.c span:last-child{text-align:right;color:var(--mut);font-size:11px;letter-spacing:.1em;text-transform:uppercase}
+/* 6 table */
+.tw{border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.tr{display:grid;grid-template-columns:44px 2.2fr 1fr 1.6fr 1.3fr 1fr;gap:16px;align-items:baseline;padding:16px 0;border-bottom:1px solid var(--line)}
+.tr:last-child{border-bottom:0}
+.tr.h{padding:12px 0;color:var(--mut)}
+.tr.h{border-bottom:1px solid var(--line)}
+.tr .n{font:400 clamp(15px,1.5vw,21px)/1.25 var(--serif);letter-spacing:-.015em}
+.tr .n.big{font-size:clamp(15px,1.5vw,21px)}
+.tr .ix{color:var(--ox)}
+button.tr{width:100%;background:none;border:0;border-bottom:1px solid var(--line);text-align:left;font:inherit;color:inherit;cursor:pointer}
+button.tr:hover .n,button.tr[aria-expanded="true"] .n{color:var(--ox)}
+.dt{color:var(--ink2);font-size:12px;max-width:72ch;animation:op .35s ease}
+.dt ul{margin:0;padding:4px 0 20px 60px}.dt li{margin:4px 0}
+.dt.rd{padding:2px 0 18px;border-bottom:1px solid var(--line)}
+.row[role=button]{cursor:pointer}.row[role=button]:hover .lab,.row[aria-expanded="true"] .lab{text-decoration:underline;text-decoration-color:var(--ox);text-underline-offset:4px}
+.row[aria-expanded="true"]{border-bottom-color:transparent}
+.fl,.tj{display:flex;gap:8px;flex-wrap:wrap}.fl{margin:0 0 16px}.tj{margin-top:14px}.fl .btn,.tj .btn{padding:10px 14px;font-size:10.5px}
+@keyframes op{from{opacity:0}to{opacity:1}}
+/* 7 close */
+.close{border-top:1px solid var(--line);padding-bottom:0;overflow:hidden}
+.close .top{display:flex;justify-content:space-between;align-items:flex-end;gap:32px;flex-wrap:wrap}
+.close .fine{color:var(--mut);margin-top:6px;max-width:52ch}
+.close .b{display:flex;gap:10px;flex-wrap:wrap;margin-left:auto}
+.strip{margin-top:64px;padding:14px 0;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;color:var(--mut)}
+.big{display:block;white-space:nowrap;font:400 clamp(80px,20vw,300px)/.8 var(--serif);letter-spacing:-.015em;transform:translateY(calc(.17em + var(--c,0)*.55em));margin:0 0 0 -.02em;user-select:none}
+.big i{color:var(--ox);font-style:normal}
+
+/* surel */
+.mail{margin-top:56px;border-top:1px solid var(--line);padding-top:32px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:clamp(24px,5vw,80px)}
+.mail h3{font:400 clamp(24px,2.6vw,38px)/1.1 var(--serif);letter-spacing:-.015em;margin:12px 0 12px}
+.mail .note{color:var(--ink2);max-width:40ch}
+.mail form{display:grid;gap:18px}
+.mail .f{display:grid;gap:6px}
+.mail label{color:var(--mut)}
+.mail input,.mail select,.mail textarea{width:100%;font:400 12.5px/1.6 var(--mono);color:var(--ink);background:transparent;border:0;border-bottom:1px solid var(--ink);padding:10px 0;border-radius:0;outline:0}
+.mail textarea{min-height:120px;resize:vertical}
+.mail select option{background:var(--bg);color:var(--ink)}
+.mail input:focus,.mail select:focus,.mail textarea:focus{border-bottom-color:var(--ox)}
+.mail .hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.mail .acts{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.mail .acts button,#cpy{cursor:pointer}
+.mail .st2{min-height:1.4em;color:var(--ox);font-size:11.5px}
+@media (max-width:860px){.mail{grid-template-columns:1fr}}
+/* reveal */
+.rv .r{opacity:0;transform:translateY(20px);transition:opacity .7s ease,transform .7s ease;transition-delay:var(--d,0s)}
+.rv .r.in{opacity:1;transform:none}
+.wm span{display:inline-block;opacity:0;transform:translateY(.45em);transition:opacity .7s ease,transform .9s cubic-bezier(.2,.7,.1,1)}
+.wm.on span{opacity:1;transform:none}
+.copy>*{opacity:0;transform:translateY(16px);animation:up .9s cubic-bezier(.2,.7,.1,1) forwards;animation-delay:calc(.14s*var(--k,0) + .25s)}
+.copy>:nth-child(2){--k:1}.copy>:nth-child(3){--k:2}.copy>:nth-child(4){--k:3}
+@keyframes up{to{opacity:1;transform:none}}
+.rv .r.hd{opacity:1;transform:translateY(.35em);clip-path:inset(0 0 100% 0);transition:clip-path 1s cubic-bezier(.2,.7,.1,1),transform 1s cubic-bezier(.2,.7,.1,1);transition-delay:var(--d,0s)}
+.rv .r.hd.in{transform:none;clip-path:inset(-10% 0 -25% 0)}
+#pg{position:fixed;left:0;right:0;top:calc(60px + env(safe-area-inset-top,0px));height:2px;background:var(--ox);transform:scaleX(var(--s,0));transform-origin:0 50%;z-index:51}
+#cur{position:fixed;left:0;top:0;width:26px;height:26px;border:1px solid var(--ox);pointer-events:none;z-index:99;opacity:0;transition:opacity .3s,width .25s,height .25s,margin .25s}
+#cur.h{width:46px;height:46px;margin:-10px 0 0 -10px}
+.mq{overflow:hidden;border-block:1px solid var(--line);padding:18px 0}
+.mt{display:flex;width:max-content;animation:mq 46s linear infinite}.mq:hover .mt{animation-play-state:paused}
+.mt span{display:flex;align-items:center;gap:1.1em;padding-right:1.1em;white-space:nowrap;font:400 clamp(24px,3.2vw,44px)/1 var(--serif);letter-spacing:-.015em}
+.mt span::after{content:"";width:8px;height:8px;background:var(--ox)}
+@keyframes mq{to{transform:translateX(-50%)}}
+.draw{margin:0}.draw svg{width:100%;height:auto;display:block}.draw figcaption,.tl figcaption{margin-top:12px;color:var(--mut);font-size:11px}
+.draw text{font:500 9px var(--mono);letter-spacing:.1em;fill:var(--mut)}
+.ic{width:18px;height:18px;vertical-align:-4px;margin-right:8px;fill:none;stroke:var(--ox);stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;transition:transform .3s ease}
+.ic path{stroke-dasharray:60;stroke-dashoffset:60;transition:stroke-dashoffset 1.3s ease .35s}
+.in .ic path{stroke-dashoffset:0}.row:hover .ic{transform:translateY(-2px) scale(1.15)}
+.tl{margin:0 0 36px}.tl svg{width:100%;height:auto;display:block;overflow:visible}
+.tb{cursor:pointer}.bar{transform-box:fill-box;transform-origin:left;transform:scaleX(0);transition:transform .9s cubic-bezier(.2,.7,.1,1),fill .2s}
+.in .bar{transform:scaleX(1)}.tb:hover .bar,.tb:focus-visible .bar{fill:var(--ox)}
+html:not(.rv) .ic path{stroke-dashoffset:0}html:not(.rv) .bar{transform:none}
+.skip{position:fixed;left:8px;top:-80px;z-index:100;background:var(--ink);color:var(--bg);padding:10px 14px;font:600 11px var(--mono);text-decoration:none}.skip:focus{top:8px}
+.hero .copy,.hero .cap{opacity:calc(1 - var(--p)*1.8)}.hero .copy{transform:translateY(calc(var(--p)*-6vh))}
+.cue{position:absolute;z-index:5;left:50%;bottom:16px;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:8px;color:var(--mut);opacity:calc(1 - var(--p)*8)}
+.cue i{width:1px;height:38px;background:var(--ink);transform-origin:top;animation:cue 2.2s ease-in-out infinite}
+@keyframes cue{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform:scaleY(1);transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+.mt span{transform:skewX(calc(var(--sk,0)*1deg))}
+nav ul a.act{border-color:var(--ox)}
+.st{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);margin-top:36px}
+.st>div{padding:16px 12px 0 0}.st b{display:block;font:400 clamp(36px,5.5vw,80px)/1 var(--serif);letter-spacing:-.015em}
+.top{position:fixed;right:clamp(16px,3vw,32px);bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:60;opacity:0;pointer-events:none;transform:translateY(12px);transition:opacity .3s,transform .3s}
+.top.v{opacity:1;pointer-events:auto;transform:none}
+#kompetensi>div:first-child{position:sticky;top:96px}
+@media (max-width:860px){#kompetensi>div:first-child{position:static}.cue{display:none}}
+@media (max-width:860px){
+ nav ul{display:none}nav .btn{margin-left:auto}
+ .copy{max-width:calc(100% - 40px);right:20px}
+ .wm.a{top:50%}.wm.b{top:calc(50% + .8em)}
+ .subj{height:min(46vh,420px);right:6vw;max-width:60vw}
+ .two{grid-template-columns:1fr}
+ .row,.row.c{grid-template-columns:1fr auto;gap:4px 16px}.row .lab{grid-column:1/-1}
+ .row.c span:last-child{grid-column:2}
+ .tr{grid-template-columns:1fr 1fr;gap:4px 16px;padding:16px 0}
+ .tr.h{display:none}.tr .n{grid-column:1/-1}
+ .reads{grid-template-columns:repeat(3,1fr)}
+ .dt ul{padding-left:18px}
+}
+@media (max-width:520px){.copy{top:16px}.copy p.l{display:none}.cap{display:none}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.wm,.subj,.wm span{transition:none}.mt{animation:none}.copy>*{animation:none;opacity:1;transform:none}#cur{display:none}.cue i{animation:none}.mt span{transform:none}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="fig" viewBox="0 0 300 520"><circle cx="150" cy="40" r="26"/><path d="M98 112C98 66 122 44 150 44s52 22 52 68c0 38-22 76-52 76s-52-38-52-76z"/><rect x="126" y="172" width="48" height="64"/><path d="M12 520V340c0-62 40-96 100-108h76c60 12 100 46 100 108v180z"/><path d="M116 232l34 70 34-70z" fill="var(--bg2)"/></symbol>
+</defs></svg>
+
+<a class="skip" href="#profil">Lewati ke konten</a>
+<nav>
+ <a class="brand" href="#top">Clarissa Tartila Arrafi<i>.</i></a>
+ <ul><li><a href="#profil">Profil</a></li><li><a href="#kompetensi">Kompetensi</a></li><li><a href="#praktik">Praktik</a></li></ul>
+ <div style="display:flex; gap:8px; align-items:center;">
+  <a class="btn" href="https://wa.me/628119914400" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+  <a class="btn" href="/cdn-cgi/l/email-protection#cdaea1acbfa4bebeacb9acbfb9a4a1acf4f88daaa0aca4a1e3aea2a0">Surel</a>
+ </div>
+</nav>
+<div id="pg"></div>
+
+<!-- 2 hero -->
+<header class="hero" id="top">
+ <div class="copy">
+  <p class="lab mut">Portofolio Clarissa Tartila Arrafi · Bidan vokasi</p>
+  <h1>Asuhan kebidanan yang <em>teliti</em>, dari kehamilan hingga nifas.</h1>
+  <p class="l">Lulusan D3 Kebidanan Poltekkes Kemenkes Jakarta I, berpengalaman praktik klinik di tujuh fasilitas pelayanan kesehatan di bawah supervisi.</p>
+  <div class="b">
+   <a class="btn p" href="#praktik">Lihat praktik</a>
+   <a class="btn" href="#kontak">Kontak</a>
+   <a class="btn" href="https://wa.me/628119914400" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+  </div>
+ </div>
+ <div class="cue" aria-hidden="true"><span class="lab">Gulir</span><i></i></div>
+ <p class="cap lab">Bekasi Utara, Jawa Barat</p>
+ <p class="wm a" id="w1">Clarissa</p>
+ <svg class="subj" id="sj" viewBox="0 0 300 520" width="300" height="520" fill="var(--mut)" role="img" aria-label="Siluet ilustratif seorang bidan"><use href="#fig"/></svg>
+ <p class="wm b" id="w2">Tartila Arrafi<em>.</em></p>
+</header>
+<div class="mq" aria-hidden="true"><div class="mt"><span>Antenatal care</span><span>Persalinan normal</span><span>Asuhan nifas</span><span>Bayi baru lahir</span><span>Pelayanan KB</span><span>Partograf</span><span>Dokumentasi SOAP</span><span>Pencegahan infeksi</span><span>Antenatal care</span><span>Persalinan normal</span><span>Asuhan nifas</span><span>Bayi baru lahir</span><span>Pelayanan KB</span><span>Partograf</span><span>Dokumentasi SOAP</span><span>Pencegahan infeksi</span></div></div>
+
+<!-- 3 drawing -->
+<section class="wrap two" id="profil" style="grid-template-columns:minmax(0,1fr)">
+ <div>
+  <p class="lab ox r">Profil</p>
+  <h2 class="r">Dasar pendidikan yang <em>terverifikasi</em>.</h2>
+  <p class="l r">Lulus D3 Kebidanan pada 2026 dan telah memegang STR serta Sertifikat Kompetensi. Tugas akhirnya membahas asuhan kebidanan komprehensif pada kasus hipoksia janin di Puskesmas Kecamatan Pasar Minggu.</p>
+  <div class="st r"><div><b data-n="3.67" data-d="2">3,67</b><span class="lab mut">IPK D3 Kebidanan</span></div><div><b data-n="8">8</b><span class="lab mut">Penempatan klinik</span></div><div><b data-n="7">7</b><span class="lab mut">Fasilitas pelayanan</span></div></div>
+  <div class="dl r">
+   <div class="row"><span class="lab">IPK</span><span>D3 Kebidanan, Poltekkes Kemenkes Jakarta I</span><b>3,67</b></div>
+   <div class="row"><span class="lab">STR</span><span>Konsil Kesehatan Indonesia</span><b>Okt 2026</b></div>
+   <div class="row"><span class="lab">Kompetensi</span><span>Bidan Vokasi Level 5, Kolegium Kebidanan</span><b>Agu 2026</b></div>
+   <div class="row"><span class="lab">EPT</span><span>LIA, skor 128, prediksi TOEFL</span><b>427</b></div>
+  </div>
+ </div>
+ </section>
+
+
+<!-- 5 practice -->
+<section class="wrap two" id="kompetensi" style="border-top:1px solid var(--line)">
+ <div>
+  <p class="lab ox r">Kompetensi</p>
+  <h2 class="r">Praktik <em>di bawah supervisi</em>, observasi, dan alat bantu.</h2>
+  <p class="l r">Seluruh tindakan klinik dijalankan sesuai kewenangan mahasiswa dan di bawah bimbingan bidan pembimbing. Pelatihan dan pengalaman sukarelawan tercantum di bagian bawah daftar ini.</p>
+ </div>
+ <div class="prac r">
+  <div class="row c"><span class="lab">ANC</span><span>Antenatal care di puskesmas dan PMB</span><span>Praktik</span></div>
+  <div class="row c"><span class="lab">APN</span><span>Asuhan persalinan normal, partograf</span><span>Praktik</span></div>
+  <div class="row c"><span class="lab">Nifas, BBL</span><span>Asuhan nifas dan bayi baru lahir</span><span>Praktik</span></div>
+  <div class="row c"><span class="lab">KB</span><span>Pelayanan KB dan kesehatan reproduksi</span><span>Praktik</span></div>
+  <div class="row c"><span class="lab">SOAP</span><span>Dokumentasi asuhan, pencegahan infeksi</span><span>Praktik</span></div>
+  <div class="row c"><span class="lab">PONED/PONEK</span><span>Kegawatdaruratan maternal dan neonatal, triase</span><span>Observasi</span></div>
+  <div class="row c"><span class="lab">Infus, CTG</span><span>Pemasangan infus dan cardiotocography</span><span>Membantu</span></div>
+  <div class="row c"><span class="lab">Rujukan</span><span>Pendampingan rujukan ke fasilitas tingkat 2</span><span>Membantu</span></div>
+  <div class="row c"><span class="lab">Perangkat</span><span>Microsoft Office, Canva, rekam medis elektronik dasar</span><span>Alat</span></div>
+  <div class="row c"><span class="lab">Mental</span><span>Kesehatan mental ibu hamil dan ibu nifas</span><span>Nov 2025</span></div>
+  <div class="row c"><span class="lab">Anak</span><span>Update program pelayanan kesehatan anak</span><span>Nov 2025</span></div>
+  <div class="row c"><span class="lab">Stunting</span><span>Titik akupresure untuk mengatasi stunting</span><span>Nov 2024</span></div>
+  <div class="row c"><span class="lab">Baby spa</span><span>Seminar nasional baby massage dan baby spa</span><span>Des 2023</span></div>
+  <div class="row c"><span class="lab">PIN Polio</span><span>Sukarelawan Pekan Imunisasi Dunia di sekolah, DKI Jakarta</span><span>Jul–Agu 2024</span></div>
+  <div class="row c"><span class="lab">Lainnya</span><span>Bonus demografi, antikorupsi (PADI), bela negara</span><span>2023–2024</span></div>
+ </div>
+</section>
+
+<!-- 6 table -->
+<section class="wrap" id="praktik" style="border-top:1px solid var(--line)">
+ <p class="lab ox r">Praktik klinik</p>
+ <h2 class="serif r" style="font-size:clamp(34px,4.6vw,68px);line-height:1.02;margin:14px 0 40px">Delapan penempatan, <em>2023 sampai 2026</em>.</h2>
+ <figure class="tl r" id="tl"></figure><p class="lab mut r" style="margin:-16px 0 18px">Pilih baris untuk melihat rincian tugas.</p><div class="fl r" id="fl"></div><div class="tw r" id="tb"></div>
+</section>
+
+<!-- 7 close -->
+<section class="wrap close" id="kontak">
+ <div class="top">
+  <div>
+   <h2 class="r">Mencari ruang magang untuk <em>bertumbuh</em>.</h2>
+   <p class="fine r">Terbuka untuk magang di bidang kesehatan, termasuk sebagai staf sterilisasi, dengan bekal pemahaman pencegahan infeksi.</p>
+  </div>
+  <div class="b r">
+   <a class="btn p" href="/cdn-cgi/l/email-protection#b8dbd4d9cad1cbcbd9ccd9caccd1d4d9818df8dfd5d9d1d496dbd7d5"><span class="__cf_email__" data-cfemail="2d4e414c5f445e5e4c594c5f5944414c14186d4a404c4441034e4240">[email&#160;protected]</span></a>
+   <button type="button" class="btn" id="cpy">Salin surel</button>
+   <a class="btn" href="https://wa.me/628119914400" target="_blank" rel="noopener noreferrer">WhatsApp: +62 811 9914 400</a>
+  </div>
+ </div>
+
+ <div class="mail r" id="surel">
+  <div>
+   <p class="lab ox">Kirim surel</p>
+   <h3>Tulis pesan <em>langsung</em>.</h3>
+   <p class="note">Isi formulir, lalu aplikasi surel Anda terbuka dengan pesan yang sudah tersusun, ditujukan ke <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="41222d20332832322035203335282d20787401262c20282d6f222e2c">[email&#160;protected]</a>. Pesan dikirim dari aplikasi surel Anda sendiri.</p>
+  </div>
+  <form id="mf" novalidate>
+   <div class="f"><label class="lab" for="mn">Nama</label><input id="mn" name="nama" autocomplete="name" required></div>
+   <div class="f"><label class="lab" for="me">Surel Anda</label><input id="me" name="email" type="email" autocomplete="email" required></div>
+   <div class="f"><label class="lab" for="mk">Keperluan</label><select id="mk" name="perlu"><option>Tawaran magang</option><option>Lowongan kerja</option><option>Kolaborasi atau kegiatan kesehatan</option><option>Lainnya</option></select></div>
+   <div class="f"><label class="lab" for="mm">Pesan</label><textarea id="mm" name="pesan" required></textarea></div>
+   <div class="hp" aria-hidden="true"><label for="mh">Kosongkan</label><input id="mh" name="web" tabindex="-1" autocomplete="off"></div>
+   <div class="acts"><button type="submit" class="btn p">Buka aplikasi surel</button><button type="button" class="btn" id="mc">Salin pesan</button></div>
+   <p class="st2" id="ms" role="status" aria-live="polite"></p>
+  </form>
+ </div>
+ <div class="strip lab r"><span>Margamulya, Bekasi Utara, Jawa Barat</span><span>Clarissa Tartila Arrafi, STR dan Kompetensi Bidan Vokasi Level 5</span></div>
+ <span class="big" aria-hidden="true">Tartila Arrafi<i>.</i></span>
+</section>
+
+<a class="btn p top" id="top2" href="#top">Atas</a>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+(function(){
+var rm=matchMedia('(prefers-reduced-motion:reduce)').matches;
+var clamp=function(v){return Math.max(0,Math.min(1,v))};
+/* table */
+var rows=[["PMB Endang Susilowati","PMB","Jagakarsa, Jakarta Selatan","Okt 2023","1 minggu"],["RS Bhayangkara Brimob","Rumah sakit","Cimanggis, Depok","Mei 2024","2 minggu"],["Puskesmas Kec. Pasar Minggu","Puskesmas","Jakarta Selatan","Mei 2024","2 minggu"],["Puskesmas Kampung Sawah","Puskesmas","Tangerang Selatan","Okt–Nov 2024","2 minggu"],["UPTD Puskesmas Rawabuntu","Puskesmas","Serpong, Tangerang Selatan","Apr–Jun 2025","8 minggu"],["RSUP Fatmawati","Rumah sakit","Cilandak, Jakarta Selatan","Sep 2025","4 minggu"],["UPTD Puskesmas Beji","Puskesmas","Beji, Depok","Sep–Nov 2025","6 minggu"],["Puskesmas Kec. Pasar Minggu","Puskesmas","Jakarta Selatan","Jan–Apr 2026","—"]];
+var h='<div class="tr h lab"><span>No</span><span>Fasilitas</span><span>Jenis</span><span>Lokasi</span><span>Periode</span><span>Durasi</span></div>';
+var D=[["Pemeriksaan dasar dan pengkajian kondisi pasien sesuai arahan; membantu persiapan alat dan kebutuhan pemeriksaan.","Mengobservasi alur pelayanan kebidanan di PMB dan komunikasi terapeutik dengan pasien di bawah supervisi bidan."],["Pengukuran tanda-tanda vital dan pemantauan kondisi umum pasien di ruang PONEK dan IGD.","Membantu persiapan pasien, alat, dan kebutuhan pelayanan; berkolaborasi dengan bidan, dokter, dan perawat.","Mengobservasi alur triase dan penatalaksanaan awal kegawatdaruratan maternal dan neonatal."],["Praktik asuhan kehamilan (ANC) di bawah supervisi bidan pembimbing.","Edukasi kesehatan ibu hamil dan pencatatan hasil pemeriksaan dalam dokumentasi asuhan."],["Praktik asuhan persalinan, neonatus, bayi balita, nifas, KB, dan kesehatan reproduksi.","Membantu pemantauan ibu dan bayi, mencatat hasil pemeriksaan, edukasi pasien dan keluarga."],["Mendampingi persalinan normal dan memantau kondisi ibu dan bayi.","Berpartisipasi dalam pelayanan KIA: kehamilan, nifas, bayi baru lahir, dan KB.","Mencatat hasil pemeriksaan dan mendukung edukasi kesehatan."],["Pengkajian dan observasi pasien pada pelayanan maternal dan neonatal.","Membantu pelayanan di poli KIA, VK IGD, highcare, dan ruang rawat inap.","Membantu pemasangan infus dan cardiotocography (CTG)."],["Asuhan kehamilan, bersalin, nifas, bayi baru lahir, imunisasi, KB, dan kesehatan reproduksi.","Membantu proses rujukan ke fasilitas kesehatan tingkat kedua.","KIE, pendidikan kesehatan, dan penyuluhan kepada pasien."],["Membantu persalinan normal dan mengobservasi kemajuan persalinan.","Mendukung pelayanan PONED, mendampingi rujukan ke fasilitas tingkat 2, membantu posyandu.","Mencatat hasil asuhan dan perkembangan pasien secara sistematis."]];
+rows.forEach(function(r,i){h+='<div class="it" data-j="'+r[1]+'"><button class="tr" aria-expanded="false" aria-controls="dt'+i+'"><span class="lab ix">'+String(i+1).padStart(2,'0')+'</span><span class="n">'+r[0]+'</span><span class="mut">'+r[1]+'</span><span>'+r[2]+'</span><span>'+r[3]+'</span><span>'+r[4]+'</span></button><div class="dt" id="dt'+i+'" hidden><ul>'+D[i].map(function(x){return '<li>'+x+'</li>'}).join('')+'</ul></div></div>'});
+function tgl(el,open){if(rm){el.hidden=!open;return}el.style.overflow='hidden';if(open){el.hidden=false;var h=el.scrollHeight;el.animate([{height:'0px',opacity:0},{height:h+'px',opacity:1}],{duration:380,easing:'cubic-bezier(.2,.7,.1,1)'})}else{el.animate([{height:el.offsetHeight+'px',opacity:1},{height:'0px',opacity:0}],{duration:280,easing:'ease-in'}).onfinish=function(){el.hidden=true}}}
+var tb=document.getElementById('tb');tb.innerHTML=h;
+tb.addEventListener('click',function(e){var b=e.target.closest('button.tr');if(!b)return;var o=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',!o);tgl(document.getElementById(b.getAttribute('aria-controls')),!o)});
+var fl=document.getElementById('fl');
+['Semua','Puskesmas','Rumah sakit','PMB'].forEach(function(n,i){var b=document.createElement('button');b.className='btn'+(i?'':' p');b.textContent=n;b.setAttribute('aria-pressed',i==0);b.onclick=function(){fl.querySelectorAll('.btn').forEach(function(x){x.classList.remove('p');x.setAttribute('aria-pressed',false)});b.classList.add('p');b.setAttribute('aria-pressed',true);tb.querySelectorAll('.it').forEach(function(it){it.hidden=n!=='Semua'&&it.dataset.j!==n})};fl.appendChild(b)});
+var X={'IPK':'Diploma III Kebidanan 2023–2026, Pondok Labu, Cilandak. Tugas akhir: Asuhan Kebidanan Komprehensif pada Ny. D dengan Hipoksia Janin di Puskesmas Kecamatan Pasar Minggu, 2026.','STR':'Surat Tanda Registrasi dari Konsil Kesehatan Indonesia, terbit Oktober 2026, tanpa tanggal kedaluwarsa.','Kompetensi':'Sertifikat Kompetensi Bidan Vokasi Level 5 dari Kolegium Kebidanan, Agustus 2026, nomor 001240/K052/A01/03/08/2026.','EPT':'Skor EPT 128 dari LIA (September 2026): Listening 45, Structure 35, Reading 48; prediksi TOEFL 427.','ANC':'Dijalani di Puskesmas Pasar Minggu, Rawabuntu, dan Beji, dengan edukasi ibu hamil dan pencatatan hasil pemeriksaan.','APN':'Mendampingi dan membantu persalinan normal di Rawabuntu, Beji, dan Pasar Minggu; terbiasa mengisi partograf.','Nifas, BBL':'Asuhan nifas dan bayi baru lahir di Kampung Sawah, Rawabuntu, dan Beji; imunisasi di Beji.','KB':'Pelayanan KB dan kesehatan reproduksi di Kampung Sawah, Rawabuntu, dan Beji.','SOAP':'Mencatat hasil asuhan dalam format SOAP, dengan bekal pemahaman pencegahan infeksi.','PONED/PONEK':'Observasi di ruang PONEK dan IGD RS Bhayangkara Brimob, serta pelayanan PONED di Puskesmas Pasar Minggu.','Infus, CTG':'Membantu pemasangan infus dan CTG di RSUP Fatmawati (poli KIA, VK IGD, highcare, rawat inap).','Rujukan':'Membantu proses rujukan di Puskesmas Beji dan mendampingi rujukan ke fasilitas tingkat 2 di Pasar Minggu.','Mental':'Peran tenaga kesehatan dalam pemantauan kesehatan mental ibu hamil dan ibu nifas. Kemenkes Poltekkes Jakarta 1, November 2025.','Anak':'Menuju Generasi Sehat dan Cerdas 2025. Kemenkes Poltekkes Jakarta 1, November 2025.','Stunting':'Kemenkes Poltekkes Jakarta 1, November 2024.','Baby spa':'Seminar Kebidanan Nasional More Knowledge More Ability: optimalisasi tumbuh kembang bayi dan balita. Kementerian Kesehatan, Desember 2023.','PIN Polio':'Membantu pelaksanaan PIN Polio di beberapa sekolah kecamatan di DKI Jakarta, 23 Juli–17 Agustus 2024.','Lainnya':'Peran Bidan dalam Memanfaatkan Bonus Demografi (Maret 2024); E-Learning Pengetahuan Antikorupsi Dasar dan Integritas/PADI (Juni 2024); Latihan Dasar Bela Negara, Pusdikkes Puskesad (Juli 2023).','Perangkat':'Microsoft Office (Word, Excel, PowerPoint), Canva, dan rekam medis elektronik dasar.'};
+document.querySelectorAll('.row').forEach(function(r){var t=X[r.querySelector('.lab').textContent];if(!t)return;var d=document.createElement('div');d.className='dt rd';d.hidden=true;d.textContent=t;r.after(d);r.tabIndex=0;r.setAttribute('role','button');r.setAttribute('aria-expanded','false');function tg(){var o=r.getAttribute('aria-expanded')==='true';r.setAttribute('aria-expanded',!o);tgl(d,!o)}r.onclick=tg;r.onkeydown=function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();tg()}}});
+document.querySelectorAll('.dl,.prac').forEach(function(l){var p=document.createElement('p');p.className='lab mut';p.style.margin='20px 0 14px';p.textContent='Klik baris untuk melihat rincian';if(l.classList.contains('prac'))l.prepend(p);else l.before(p)});
+/* motion */
+document.querySelectorAll('.wm').forEach(function(w){var t=w.textContent,i=0;w.setAttribute('role','img');w.setAttribute('aria-label',t);w.textContent='';[].forEach.call(t,function(c){var e=document.createElement('span');e.setAttribute('aria-hidden','true');e.textContent=c===' '?'\u00a0':c;if(c==='.')e.style.color='var(--ox)';e.style.transitionDelay=((w.id==='w2'?.35:0)+i++*.045)+'s';w.appendChild(e)})});
+var hr=document.querySelector('.hero'),fine=matchMedia('(pointer:fine)').matches&&!rm;
+if(fine){var cur=document.createElement('div'),tx=-100,ty=-100,cx=-100,cy=-100,mx=0,my=0,sx=0,sy=0;cur.id='cur';cur.style.transform='translate(-100px,-100px)';document.body.appendChild(cur);
+ addEventListener('pointermove',function(e){if(!e.clientX&&!e.clientY)return;tx=e.clientX;ty=e.clientY;mx=(tx/innerWidth-.5)*2;my=(ty/innerHeight-.5)*2;cur.style.opacity=1;cur.classList.toggle('h',!!(e.target.closest&&e.target.closest('a,button,.row[role=button]')))});
+ document.documentElement.addEventListener('pointerleave',function(){cur.style.opacity=0});
+ (function lp(){cx+=(tx-cx)*.18;cy+=(ty-cy)*.18;sx+=(mx-sx)*.06;sy+=(my-sy)*.06;cur.style.transform='translate('+(cx-13)+'px,'+(cy-13)+'px)';hr.style.setProperty('--mx',sx.toFixed(3));hr.style.setProperty('--my',sy.toFixed(3));requestAnimationFrame(lp)})();
+ document.querySelectorAll('.btn').forEach(function(b){b.style.transition='transform .25s ease,background .2s,color .2s,border-color .2s';b.addEventListener('pointermove',function(e){var r=b.getBoundingClientRect();b.style.transform='translate('+(e.clientX-r.left-r.width/2)*.18+'px,'+(e.clientY-r.top-r.height/2)*.25+'px)'});b.addEventListener('pointerleave',function(){b.style.transform=''})})}
+[['IPK',3.67,2],['EPT',427,0]].forEach(function(a){var r=[].find.call(document.querySelectorAll('.row'),function(x){return x.querySelector('.lab').textContent===a[0]});if(!r||rm)return;var b=r.querySelector('b');b.textContent=(0).toFixed(a[2]).replace('.',',');var o=new IntersectionObserver(function(es){if(!es[0].isIntersecting)return;o.disconnect();var t0=performance.now();(function stp(n){var k=Math.min(1,(n-t0)/1400),e=1-Math.pow(1-k,3);b.textContent=(a[1]*e).toFixed(a[2]).replace('.',',');if(k<1)requestAnimationFrame(stp)})(t0)});o.observe(b)});
+document.querySelectorAll('.dl,.prac,#tb').forEach(function(c){c.classList.remove('r')});
+document.querySelectorAll('.dl .row,.prac .row,#tb .it').forEach(function(x){x.classList.add('r')});
+document.querySelectorAll('.two h2,.close h2,#praktik h2').forEach(function(h){h.classList.add('hd')});
+/* gambar */
+(function(){
+var ICON={'ANC':'M12 20s-7-4.5-7-10a4 4 0 0 1 7-2 4 4 0 0 1 7 2c0 5.5-7 10-7 10z','APN':'M3 12h4l2-6 4 12 2-6h6','Nifas, BBL':'M12 4a8 8 0 1 0 0 16 8 8 0 0 0 0-16zM9 10v.5M15 10v.5M8.5 14c1 1.5 6 1.5 7 0','KB':'M4 6h16v14H4zM4 11h16M8 3v4M16 3v4','SOAP':'M7 4h10v17H7zM10 3h4v3h-4zM10 11h4M10 15h4','PONED/PONEK':'M10 4h4v6h6v4h-6v6h-4v-6H4v-4h6z','Infus, CTG':'M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z','Rujukan':'M4 12h15M13 6l6 6-6 6','Perangkat':'M3 5h18v11H3zM9 20h6M12 16v4'};['Mental','Anak','Stunting','Baby spa','PIN Polio','Lainnya'].forEach(function(k){ICON[k]='M5 4h14v12H5zM9 20l3-3 3 3M8 8h8M8 12h5'});
+document.querySelectorAll('.prac .row').forEach(function(r){var l=r.querySelector('.lab'),d=ICON[l.textContent];if(d)l.insertAdjacentHTML('afterbegin','<svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path pathLength="60" d="'+d+'"/></svg>')});
+/* lini masa praktik */
+var P=[['2023-10-09','2023-10-14'],['2024-05-06','2024-05-17'],['2024-05-20','2024-05-31'],['2024-10-28','2024-11-08'],['2025-04-21','2025-06-13'],['2025-09-01','2025-09-26'],['2025-09-29','2025-11-08'],['2026-01-01','2026-04-30']];
+var A=Date.parse('2023-10-01'),Z=Date.parse('2026-05-01');function XX(d){return 10+(Date.parse(d)-A)/(Z-A)*980}
+var h='<svg viewBox="0 0 1000 96" role="group" aria-label="Lini masa delapan penempatan praktik klinik, Oktober 2023 sampai April 2026"><line x1="10" y1="62" x2="990" y2="62" stroke="var(--ink)" stroke-width=".6"/>';
+[['2024-01-01','2024'],['2025-01-01','2025'],['2026-01-01','2026']].forEach(function(y){var x=XX(y[0]);h+='<line x1="'+x+'" y1="40" x2="'+x+'" y2="72" stroke="var(--ink)" stroke-width=".6" opacity=".5"/><text x="'+x+'" y="90" text-anchor="middle" style="font:500 10px var(--mono);letter-spacing:.14em;fill:var(--mut)">'+y[1]+'</text>'});
+P.forEach(function(p,i){var x=XX(p[0]),w=Math.max(5,XX(p[1])-x);h+='<g class="tb" data-i="'+i+'" tabindex="0" role="button" aria-label="Penempatan '+(i+1)+': '+rows[i][0]+'"><title>'+rows[i][0]+' · '+rows[i][3]+'</title><rect class="bar" x="'+x+'" y="48" width="'+w+'" height="14" fill="var(--ink)" style="transition-delay:'+(.3+i*.12)+'s"/><text x="'+(x+w/2)+'" y="'+(i%2?24:38)+'" text-anchor="middle" style="font:600 10px var(--mono);fill:var(--ox)">'+(i+1)+'</text></g>'});
+var tl=document.getElementById('tl');tl.innerHTML=h+'</svg><figcaption>Lini masa praktik klinik. Klik batang untuk membuka rinciannya di tabel. Panjang batang sebanding dengan lama praktik.</figcaption>';
+function go(g){var bt=document.querySelectorAll('#tb button.tr')[+g.dataset.i];if(bt.closest('.it').hidden)fl.firstChild.click();if(bt.getAttribute('aria-expanded')!=='true')bt.click();bt.scrollIntoView({behavior:rm?'auto':'smooth',block:'center'})}
+tl.addEventListener('click',function(e){var g=e.target.closest('.tb');if(g)go(g)});
+tl.addEventListener('keydown',function(e){var g=e.target.closest&&e.target.closest('.tb');if(g&&(e.key==='Enter'||e.key===' ')){e.preventDefault();go(g)}});
+})();
+/* efek gulir */
+document.querySelectorAll('[data-n]').forEach(function(b){if(rm)return;var n=+b.dataset.n,dc=+(b.dataset.d||0);b.textContent=(0).toFixed(dc).replace('.',',');var o=new IntersectionObserver(function(es){if(!es[0].isIntersecting)return;o.disconnect();var t0=performance.now();(function stp(x){var k=Math.min(1,(x-t0)/1500),e=1-Math.pow(1-k,3);b.textContent=(n*e).toFixed(dc).replace('.',',');if(k<1)requestAnimationFrame(stp)})(t0)});o.observe(b)});
+var links=[].slice.call(document.querySelectorAll('nav ul a')),so=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)links.forEach(function(a){a.classList.toggle('act',a.getAttribute('href')==='#'+e.target.id)})})},{rootMargin:'-45% 0px -50% 0px'});
+['profil','kompetensi','praktik','kontak'].forEach(function(id){so.observe(document.getElementById(id))});
+if(!rm){var ly=scrollY,vv=0,mqe=document.querySelector('.mq');(function vl(){var d=scrollY-ly;ly=scrollY;vv+=(d-vv)*.12;mqe.style.setProperty('--sk',Math.max(-8,Math.min(8,-vv*.25)).toFixed(2));requestAnimationFrame(vl)})()}
+
+/* surel */
+(function(){
+var TO='clarissatartila95@gmail.com',f=document.getElementById('mf'),st=document.getElementById('ms');
+function say(t){st.textContent=t}
+function copy(t,ok){function fb(){var a=document.createElement('textarea');a.value=t;a.style.position='fixed';a.style.opacity=0;document.body.appendChild(a);a.select();try{document.execCommand('copy');say(ok)}catch(e){say('Gagal menyalin. Salin manual: '+TO)}a.remove()}
+ if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(function(){say(ok)},fb)}else fb()}
+function build(){var n=f.nama.value.trim(),e=f.email.value.trim(),k=f.perlu.value,m=f.pesan.value.trim();
+ if(f.web.value)return null;
+ if(!n||!m||!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(e)){say('Lengkapi nama, surel yang valid, dan pesan.');return null}
+ return{sub:k+' - '+n,body:'Yth. Clarissa Tartila Arrafi,\n\n'+m+'\n\nSalam,\n'+n+'\n'+e}}
+f.addEventListener('submit',function(ev){ev.preventDefault();var d=build();if(!d)return;say('Membuka aplikasi surel. Jika tidak terbuka, pakai Salin pesan.');location.href='mailto:'+TO+'?subject='+encodeURIComponent(d.sub)+'&body='+encodeURIComponent(d.body)});
+document.getElementById('mc').addEventListener('click',function(){var d=build();if(!d)return;copy('Kepada: '+TO+'\nSubjek: '+d.sub+'\n\n'+d.body,'Pesan tersalin.')});
+document.getElementById('cpy').addEventListener('click',function(){copy(TO,'Alamat surel tersalin: '+TO)});
+})();
+/* hero scroll */
+var hero=document.querySelector('.hero'),tick=false;
+function onScroll(){
+ if(!rm){hero.style.setProperty('--p',clamp(scrollY/(hero.offsetHeight*.85)).toFixed(4))}
+ var dh=document.documentElement.scrollHeight-innerHeight;document.getElementById('pg').style.setProperty('--s',dh>0?clamp(scrollY/dh):0);
+ var cl=document.querySelector('.close'),cr=cl.getBoundingClientRect(),v=clamp((innerHeight-cr.top)/cr.height);cl.style.setProperty('--c',rm?0:(1-clamp((v-.4)/.6)).toFixed(3));
+ document.getElementById('top2').classList.toggle('v',scrollY>innerHeight*.8);
+ tick=false;
+}
+addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(onScroll)}},{passive:true});
+addEventListener('resize',onScroll);
+onScroll();
+/* hero reveal: rAF, no observer */
+requestAnimationFrame(function(){requestAnimationFrame(function(){['w1','sj','w2'].forEach(function(id,i){setTimeout(function(){document.getElementById(id).classList.add('on')},rm?0:i*140)})})});
+/* section reveal */
+if(!rm&&'IntersectionObserver' in window){
+ document.documentElement.classList.add('rv');
+ var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -6% 0px'});
+ document.querySelectorAll('.r').forEach(function(el){
+  var i=Array.prototype.indexOf.call(el.parentNode.children,el);el.style.setProperty('--d',(Math.min(i,6)*.07)+'s');io.observe(el)});
+}
+})();
+</script>
+</body>
+</html>
